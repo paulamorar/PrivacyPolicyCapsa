@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – CAPSA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+      line-height: 1.7;
+      color: #333;
+    }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 20px; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p { margin: 12px 0; }
+    ul { margin: 8px 0 8px 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #0066cc; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+    th { background: #f5f5f5; text-align: left; padding: 10px 12px; border: 1px solid #ddd; }
+    td { padding: 10px 12px; border: 1px solid #ddd; vertical-align: top; }
+    .meta { font-size: 14px; color: #666; margin-bottom: 32px; }
+    .summary-box { background: #f9f9f9; border-left: 4px solid #0066cc; padding: 16px 20px; border-radius: 4px; margin: 16px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy for CAPSA</h1>
+  <p class="meta">
+    <strong>Effective date:</strong> April 23, 2026 &nbsp;|&nbsp;
+    <strong>Last updated:</strong> April 23, 2026
+  </p>
+
+  <p>This Privacy Policy describes how the CAPSA app ("CAPSA", "the app", "we", "us") handles information when you use it on your iPhone or iPad. This document is written to comply with Apple's App Store Privacy disclosure requirements as published at <a href="https://developer.apple.com/app-store/app-privacy-details/">https://developer.apple.com/app-store/app-privacy-details/</a>.</p>
+
+  <h2>1. Summary</h2>
+  <div class="summary-box">
+    <p><strong>CAPSA does not collect any personal data.</strong></p>
+    <p>All information you create inside the app — the photos you scan, the names you assign, the descriptions you write and the collections you organize — is stored exclusively on your device and, if you have iCloud enabled, in your own personal iCloud account. The developer of CAPSA has no access to this information at any time.</p>
+    <p>CAPSA does not contain analytics, advertising, tracking technologies, or third-party SDKs.</p>
+  </div>
+
+  <h2>2. Information the App Handles on Your Device</h2>
+  <p>The following information is created by you and stored locally on your device using Apple's SwiftData framework. It never leaves the device except to sync to your own iCloud account (see Section 3).</p>
+  <ul>
+    <li><strong>Photos of collectible items</strong> you capture with the in-app document scanner (Apple VisionKit). Images are stored as JPEG data inside the app's local database.</li>
+    <li><strong>Text</strong> you type inside the app: collection names, item names, and item descriptions.</li>
+    <li><strong>Visual layout preferences</strong> of each item (its shape and dateAdded).</li>
+    <li><strong>First-launch flags</strong> stored in <code>UserDefaults</code> / <code>@AppStorage</code> (for example, whether you have seen the onboarding). These are local boolean flags and contain no personal information.</li>
+  </ul>
+  <p>This information is not transmitted to the developer or to any third party.</p>
+
+  <h2>3. iCloud Synchronization (CloudKit Private Database)</h2>
+  <p>CAPSA uses <strong>CloudKit</strong> with Apple's <code>.automatic</code> configuration to sync your collections across your own Apple devices.</p>
+  <ul>
+    <li>Your data is stored in the <strong>Private Database</strong> of your personal iCloud account.</li>
+    <li>Synchronization is handled entirely by Apple's infrastructure under your Apple ID.</li>
+    <li>The developer of CAPSA <strong>cannot access, read, modify, or export this data</strong>.</li>
+    <li>If you disable iCloud for CAPSA in iOS Settings, no data leaves your device.</li>
+    <li>If you delete the app or sign out of iCloud, the data in your iCloud account is managed by Apple according to Apple's iCloud Terms and Privacy Policy (<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>).</li>
+  </ul>
+  <p>Because this data remains under your sole control within your iCloud account, it is not considered "collected" by the developer under Apple's definition of collection.</p>
+
+  <h2>4. Security</h2>
+  <p>CAPSA relies entirely on Apple's built-in security infrastructure:</p>
+  <ul>
+    <li>Data stored on your device is protected by iOS Data Protection and file-system encryption, tied to your device passcode.</li>
+    <li>Data synchronized to iCloud via CloudKit is encrypted by Apple both <strong>in transit</strong> (TLS) and <strong>at rest</strong> on Apple's servers, under your Apple ID.</li>
+    <li>The developer does not operate any server, database, or backend service, and therefore cannot read, expose, leak, or be breached with respect to your CAPSA data.</li>
+    <li>Any security guarantees beyond the device itself are provided by Apple and governed by Apple's Privacy Policy and iCloud Terms.</li>
+  </ul>
+
+  <h2>5. Camera Access</h2>
+  <p>CAPSA uses the camera through Apple's VisionKit document scanner only when you explicitly tap the scan button to add a new collectible.</p>
+  <ul>
+    <li>You will be asked for camera permission the first time this feature is used, through the standard iOS system prompt.</li>
+    <li>The captured image is processed by Apple's VisionKit on your device and returned to the app as an image.</li>
+    <li>The image is then stored locally (and in your own iCloud if enabled), following the rules in Sections 2 and 3.</li>
+    <li>The app does not stream, upload, or share camera images with the developer or any third party.</li>
+    <li>You may revoke camera access at any time in iOS Settings → Privacy &amp; Security → Camera.</li>
+  </ul>
+  <p>CAPSA does not access the Photo Library, microphone, location, contacts, health data, or any other sensitive permission.</p>
+
+  <h2>6. Permissions and User Consent</h2>
+  <p>CAPSA does not implement any custom consent flow because no personal data is collected by the developer. All consent interactions are handled by iOS itself:</p>
+  <ul>
+    <li><strong>Camera</strong>: managed by the iOS system permission prompt (see Section 5).</li>
+    <li><strong>iCloud sync</strong>: controlled by your device-wide iCloud settings for CAPSA.</li>
+    <li><strong>Notifications, Location, Contacts, Photos, Microphone, Health</strong>: not requested, because the app does not use them.</li>
+  </ul>
+  <p>You can change any of these choices at any time in the iOS Settings app, and CAPSA will continue to function for features that do not depend on the revoked permission.</p>
+
+  <h2>7. Tracking and App Tracking Transparency (ATT)</h2>
+  <p>CAPSA does <strong>not</strong> track users as defined by Apple:</p>
+  <ul>
+    <li>No data is linked with third-party data for advertising or advertising measurement.</li>
+    <li>No data is shared with data brokers.</li>
+    <li>No third-party analytics, advertising or attribution SDKs are integrated.</li>
+    <li>No advertising identifier (IDFA) is read or used.</li>
+  </ul>
+  <p>Because CAPSA does not perform any tracking, the app <strong>does not present the App Tracking Transparency (ATT) prompt</strong>, in line with Apple's requirement that the prompt only be shown by apps that actually track.</p>
+
+  <h2>8. Third-Party Services</h2>
+  <p>CAPSA does not integrate any third-party SDK, analytics library, advertising network, crash-reporting service, or external API. The app communicates only with Apple's own on-device frameworks and, when iCloud is enabled, Apple's CloudKit service under your Apple ID.</p>
+
+  <h2>9. Apple's App Privacy Nutrition Label</h2>
+  <p>In line with Apple's App Store Privacy Details requirements, CAPSA declares the following:</p>
+  <table>
+    <tr>
+      <th>Section</th>
+      <th>Declaration</th>
+    </tr>
+    <tr>
+      <td>Data Used to Track You</td>
+      <td><strong>None.</strong> CAPSA does not track users as defined by Apple (no linking to third-party data for advertising/measurement; no data brokers).</td>
+    </tr>
+    <tr>
+      <td>Data Linked to You</td>
+      <td><strong>None.</strong> The developer does not receive any data.</td>
+    </tr>
+    <tr>
+      <td>Data Not Linked to You</td>
+      <td><strong>None.</strong> The developer does not receive any data.</td>
+    </tr>
+  </table>
+  <p>The corresponding selection in App Store Connect is <strong>"Data Not Collected"</strong>.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>CAPSA does not knowingly collect personal information from anyone, including children under the age of 13 (or the equivalent minimum age under applicable local law, such as 16 under GDPR). The app does not require an account, does not ask for personal details, and does not present advertising or external links.</p>
+
+  <h2>11. Data Retention and Deletion</h2>
+  <p>Because the developer does not collect any data, there is no developer-side retention period. Your data is retained only on your own device and in your own iCloud account, for as long as you choose to keep the app installed and iCloud sync enabled.</p>
+  <p>You can remove your data at any time:</p>
+  <ul>
+    <li><strong>Delete an item or a collection</strong> using the delete buttons inside CAPSA.</li>
+    <li><strong>Delete all local data</strong> by deleting the CAPSA app from your device.</li>
+    <li><strong>Delete the iCloud copy</strong> at iOS Settings → [your name] → iCloud → Manage Account Storage → CAPSA → Delete Data.</li>
+    <li><strong>Stop future iCloud sync</strong> at iOS Settings → [your name] → iCloud → Apps Using iCloud → disable CAPSA.</li>
+    <li><strong>Revoke camera permission</strong> at iOS Settings → Privacy &amp; Security → Camera → disable CAPSA.</li>
+  </ul>
+  <p>Deleting the app does not send any deletion request to the developer, because no developer-side data exists to delete.</p>
+
+  <h2>12. International Use and Legal Compliance (GDPR, CCPA/CPRA, LGPD)</h2>
+  <p>Because the developer does not collect, store, process, sell, share, or transfer any personal data, CAPSA complies by design with the core obligations of major data-protection frameworks, including:</p>
+  <ul>
+    <li>The <strong>EU General Data Protection Regulation (GDPR)</strong> and the <strong>UK GDPR</strong>.</li>
+    <li>The <strong>California Consumer Privacy Act / California Privacy Rights Act (CCPA/CPRA)</strong>.</li>
+    <li>The <strong>Brazilian Lei Geral de Proteção de Dados (LGPD)</strong>.</li>
+  </ul>
+  <p>The developer is not a "data controller" or "data processor" of your CAPSA content, because CAPSA content stays on your device or in your personal iCloud account. No personal data is sold or shared for cross-context behavioural advertising. There is no international transfer of personal data performed by the developer.</p>
+  <p>If you are a user in the EU/EEA, UK, California, Brazil, or another jurisdiction granting data-subject rights, you may contact the developer using the details in Section 14 for any question regarding CAPSA itself.</p>
+
+  <h2>13. Changes to This Policy</h2>
+  <p>If the app ever begins to handle data differently, this policy will be updated before the new version ships, and the "Last updated" date at the top of this document will change. Material changes will also be reflected in the App Store Privacy Details before the updated version becomes available.</p>
+
+  <h2>14. Contact</h2>
+  <p>For any question related to privacy or this document, please contact:</p>
+  <p><strong>Paula Mora Romero</strong><br>
+  Email: <a href="mailto:moraromeropaula@gmail.com">moraromeropaula@gmail.com</a></p>
+
+  <hr style="margin-top: 48px; border: none; border-top: 1px solid #eee;">
+  <p style="font-size: 13px; color: #999;"><em>This document applies exclusively to the CAPSA iOS/iPadOS application. It does not cover Apple iCloud, the App Store, or any Apple service, which are governed by Apple's own privacy policies.</em></p>
+
+</body>
+</html>
